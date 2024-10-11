@@ -1,0 +1,3 @@
+C:\Users\GlBe\source\repos\PowerPlatformTemplates\ErrorHandlingSolution\ErrorHandlingSolution\obj\Debug\ErrorHandlingSolution.Workflows.csproj.CoreCompileInputs.cache
+C:\Users\GlBe\source\repos\PowerPlatformTemplates\ErrorHandlingSolution\ErrorHandlingSolution\obj\Debug\ErrorHandlingSolution.dll
+C:\Users\GlBe\source\repos\PowerPlatformTemplates\ErrorHandlingSolution\ErrorHandlingSolution\obj\Debug\ErrorHandlingSolution.pdb
