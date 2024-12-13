@@ -13,7 +13,7 @@ namespace PowerAutomateExtensions.Extensions.RegEx
         public InArgument<string> RegEx { get; set; }
 
         [Output("IsMatch")]
-        public OutArgument<string> IsMatch { get; set; }
+        public OutArgument<bool> IsMatch { get; set; }
 
         protected override void Execute(CodeActivityContext executionContext)
         {
@@ -24,8 +24,8 @@ namespace PowerAutomateExtensions.Extensions.RegEx
             RegExService regExService = new RegExService(executionContext, context.InitiatingUserId, context.OrganizationName);
 
             bool isMatch = regExService.IsMatch(inputText, regEx);
-            regExService.Trace("IsMatch", $"inputText: {inputText}, regEx: {regEx}, isMatch: {isMatch}");
-            IsMatch.Set(executionContext, isMatch.ToString());
+            regExService.Trace($"inputText: {inputText}, regEx: {regEx}, isMatch: {isMatch}");
+            IsMatch.Set(executionContext, isMatch);
         }
     }
 }
